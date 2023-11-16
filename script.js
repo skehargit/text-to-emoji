@@ -13,7 +13,6 @@ function btnClicking(){
         document.querySelector("#dec-btn").style.backgroundColor="#222"
         document.querySelector("#main h1 span img").style.rotate="0deg"
     })
-    
 }
 btnClicking();
 
@@ -53,7 +52,6 @@ function decryption(){
         var password2=document.querySelector("#dec-password").value
 
         var user=JSON.parse(localStorage.getItem("data1"))
-
         var str2=input2.split(" ");
 
         str2.forEach(el=>{
@@ -67,15 +65,18 @@ function decryption(){
                 found=i;
             }
         }
-        if(found.clutter==clutter2){
 
+        if(found==undefined){
+            document.querySelector("#dec-result").style.backgroundColor=`#ff000071`
+            document.querySelector("#dec-result").innerHTML="Message Not Found!"
+        }else if(found.pass!=password2){
+            document.querySelector("#dec-result").style.backgroundColor=`#ff000071`
+            document.querySelector("#dec-result").innerHTML="Wrong Password!"
+        }else if(found.clutter==clutter2){
+            document.querySelector("#dec-result").style.backgroundColor=`#1c1c1c`
             document.querySelector("#dec-result").innerHTML=found.input
 
-        }else{
-            document.querySelector("#dec-result").style.color=`red`
-            document.querySelector("#result").innerHTML="Wrong Password!"
         }
-
     })
 }
 decryption();
