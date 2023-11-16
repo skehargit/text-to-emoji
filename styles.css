@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width:100vw;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#main h1{
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+}
+#main h1 span{
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+#main h1 span img{
+    width: 50px;
+    transition: 0.3 ease;
+}
+#endec-div{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: #222;
+ padding: 10px;
+ /* width: 3%; */
+ min-width: 300px;
+ max-width: 500px;
+ border-radius: 10px;
+ /* width: 30%; */
+ margin: 30px;
+
+}
+#endec-div div{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 10px;
+    transition: 0.2 ease;
+    font-weight: 500;
+
+}
+#enc-btn{
+    background-color: #333;
+    padding: 10px;
+}
+#dec-btn{
+    padding: 10px;
+}
+#endec-div div span{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* justify-content: center; */
+    margin: 0 0 0 10px;
+    padding: 5px;
+}
+#endec-div div span img{
+    width: 20px;
+}
+#encryption,#decryption{
+    width: 90%;
+    max-width: 500px;
+    min-width: 300px;
+    /* border: 1px solid red; */
+    /* background-color: red; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    flex-direction: column;
+}
+#encryption h5,#decryption h5{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 13px;
+    color: #6e6e6e;
+    
+}
+#encryption textarea,#decryption textarea{
+    width: 95%;
+    height: 70px;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    outline: none;
+    margin-bottom: 10px;
+    background-color: #1c1c1c;
+    
+}
+#encryption input,#decryption input{
+    width: 95%;
+    margin-bottom: 20px;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    outline: none;
+    background-color: #1c1c1c;
+}
+#encryption button,#decryption button{
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+    background-color: #1c1c1c;
+    border: none;
+    width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+button span{
+    display: flex;
+    margin: 0 10px 0 0;
+}
+button img{
+    width: 20px;
+}
+#decryption{
+    display: none;
+}
+
+#result,#dec-result{
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #1c1c1c;
+    border: 1px solid #343434;
+    width: 90%;
+    margin-bottom: 20px;
+}
