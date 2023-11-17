@@ -28,7 +28,7 @@ html,body{
 }
 #main h1 span img{
     width: 50px;
-    transition: 0.3 ease;
+    transition: 0.3s;
 }
 #endec-div{
  display: flex;
@@ -47,7 +47,7 @@ html,body{
     display: flex;
     align-items: center;
     border-radius: 10px;
-    transition: 0.2 ease;
+    transition: 0.2s;
     font-weight: 500;
 
 }
