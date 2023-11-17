@@ -26,10 +26,16 @@ function encryption(){
         str.forEach(element => {
             clutter+=`&#128${(element.charCodeAt())} `
         });
-        document.querySelector("#result").innerHTML=clutter
+        if(password==""){
+            document.querySelector("#result").style.backgroundColor=`#ff000071`
+            document.querySelector("#result").innerHTML="Set a Password!!"
+        }else{
+            document.querySelector("#result").innerHTML=clutter
+        }
+        
 
         var data=[];
-
+        
         if(JSON.parse(localStorage.getItem("data1"))){
             data=JSON.parse(localStorage.getItem("data1"));
             data.push({"pass":password,"input":input,"clutter":clutter});
